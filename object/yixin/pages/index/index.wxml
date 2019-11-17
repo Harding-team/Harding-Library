@@ -1,4 +1,72 @@
-<div class="index">
-  首页
-  <i class="iconfont icon-biao"></i>
-</div>
+<view class="index">
+  <!-- 轮播图 -->
+  <swiper
+   indicator-dots="{{indicatorDots}}"
+   class="swiper"
+   autoplay="{{autoplay}}" 
+   interval="{{interval}}" 
+   duration="{{duration}}"
+   indicator-active-color="#fff"
+   indicator-color="rgba(0,0,0,0.1)"
+   >
+    <block wx:for="{{imgArr}}" wx:key="{{index}}" >
+      <swiper-item>
+        <image src="{{item}}" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 轮播图下方 -->
+  <view class="reservationBox">
+    <view class="" wx:for="{{reservationArr}}" wx:key="{{index}}" data-pathUrl="{{item.pathUrl}}" data-name="{{item.name}}" bindtap="gotoBox">
+      <image src="{{item.imgUrl}}" />
+      <p>{{item.name}}</p>
+    </view>
+  </view>
+  <!-- 优惠券 -->
+  <view class="reservation">
+    <view class="reservation-box" >
+      <view class="reservation-title">优<span>·</span>惠<span>·</span>券</view>
+      <view class="reservation-btm">
+        <image src="/images/qiimg/6.png" bindtap="goToOfferDetail" />
+        <view bindtap="goToOfferDetail"  >
+          <view>艺欣艺术100代金券</view>
+          <span>2019-11-11至2020-11-11</span>
+        </view>
+        <view >
+          <view class="receive" wx:if="{{offerFlag == '0'}}" bindtap="receive">领取</view>
+          <view class="receive" wx:else bindtap="receive">已领取</view>
+          <span>60人以领取</span>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 艺欣艺术 -->
+  <view class="yixin">
+    <view class="yixin-title">艺<span>·</span>欣<span>·</span>艺<span>·</span>术</view>
+    <view class="yixin-btm">
+      <view>
+        <i class="iconfont icon-biao"></i>
+        <view>24小时</view>
+      </view>
+      <view>
+        <i class="iconfont icon-yingyong"></i>
+        <view class="yixin-orange">Wi-Fi</view>
+        <view class="yixin-orange">停车位</view>
+        <view class="yixin-orange">支付宝支付</view>
+        <view class="yixin-orange">微信支付</view>
+      </view>
+      <yixinyishu></yixinyishu>
+    </view>
+  </view>
+  <!-- 商铺图片 -->
+  <view class="shopImg">
+    <view class="shopImg-box">
+      <view class="shopImg-title">店<span>·</span>铺<span>·</span>图<span>·</span>片<span class="all"><span data-name="店铺图片" data-pathUrl="/pages/shopImg/shopImg" bindtap="gotoBox">全部</span><i class="iconfont icon-fanhui"></i></span></view>
+      <view class="shopImg-btm">
+        <image src="/images/qiimg/6.png" />
+        <image src="/images/qiimg/6.png" />
+        <image src="/images/qiimg/6.png" />
+      </view>
+    </view>
+  </view>
+</view>

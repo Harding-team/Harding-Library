@@ -94,5 +94,12 @@
   .icon-pintuan:before {
     content: "\e60f";
   }
-  
-  
+ .view{
+    display: flex;
+    justify-content: flex-start;
+    margin:20rpx 0;
+  }
+  .view view{
+    margin-left:10rpx;
+    font-size:26rpx;
+  }  
