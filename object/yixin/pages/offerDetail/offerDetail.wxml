@@ -3,7 +3,7 @@
         <view class="position p-left"></view>
         <view class="position p-right"></view>
         <view class="title">
-            <image src="/images/1.png" />
+            <image src="/images/qiimg/1.png" />
             <view >石浦艺欣艺术学校</view>
         </view>
         <view class="top">
@@ -14,7 +14,7 @@
             <view class="btn">马上领取</view>
         </view>
         <view class="receive {{flodFlag?'active':''}}">
-            <image src="/images/3.png" wx:for="{{60}}" wx:key="{{index}}" />
+            <image src="/images/qiimg/3.png" wx:for="{{60}}" wx:key="{{index}}" />
         </view>
         <view class="fold">
             <view >60人以领取</view>
@@ -58,7 +58,7 @@
                     <view style="color:red;margin-top:30rpx;" >
                         本优惠券仅适用于线下门店消费时使用，请到店后出示券码给店员核销，如有疑问请咨询商家客服。
                     </view>
-                    <image src="/images/11.png" />
+                    <image src="/images/qiimg/11.png" />
                 </view>
             </view>
         </view>

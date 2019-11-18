@@ -25,7 +25,7 @@ Page({
   },
   goToYouHuiDetail(){
     wx.navigateTo({
-      url: '/pages/youhuiDetail/youhuiDetail'
+      url: '/pages/offerDetail/offerDetail'
     })
   }
 })
