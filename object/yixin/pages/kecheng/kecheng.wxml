@@ -10,7 +10,7 @@
     </view>
     <view class='right'>
       <view wx:for='{{lists}}' wx:key='' class='views {{index==num?"active":""}}'>
-        <view class='aaa' wx:for="{{item.gou}}">
+        <view class='aaa' bindtap="details" wx:for="{{item.gou}}" data-id="{{item.id}}">
           <view class='images'><image src='{{item.images}}'></image></view>
           <view class='rights'>
             <view class='rights-one'>{{item.titles}}</view>
@@ -40,7 +40,7 @@
         <view>数量</view>
         <view class='centers-one'><view bindtap='aaas' class='aaas'>-</view><view class='bbb'>{{gouon.nums}}</view><view bindtap='aaaa' class='aaaa'>+</view></view>
       </view>
-      <view class='que'>确认</view>
+      <view class='que' bindtap='quern'>确认</view>
     </view>
   </view>
 </view>

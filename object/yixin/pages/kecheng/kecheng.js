@@ -19,7 +19,7 @@ Page({
             png: '0',
             nums:1,
             images: '../../images/cart.jpg',
-            id:0
+            id:1
           },
           {
             titles: '艺欣艺术 美术组、500元学费任你砍！',
@@ -30,7 +30,7 @@ Page({
             png: '0',
             nums: 1,
             images: '../../images/cart.jpg',
-            id:1
+            id:2
           },
         ]
       }, {
@@ -62,7 +62,6 @@ Page({
     
       },
     ],
-
   },
   clicke(e){
     console.log(e.currentTarget.dataset.num)
@@ -80,28 +79,72 @@ Page({
         gouon: this.data.lists[0].gou[ad]
       })
   },
-  aaas() {
-    this.data.gouon.nums--
-    var nums = this.data.gouon.nums
+  // aaas() {
+  //   this.data.gouon.nums--
+  //   var nums = this.data.gouon.nums
     
-    console.log(nums)
-    this.setData({
-      nums: this.data.gouon.nums
-    })
-  },
+  //   this.setData({
+  //     nums: this.data.gouon.nums
+  //   })
+  // },
   aaaa() {
-    this.data.gouon.nums++
-    var nums = this.data.gouon.nums
+    
+    var nums ='this.data.gouon.nums'
    
-    console.log(nums)
+    // console.log(nums)
     this.setData({
-      nums: this.data.gouon.nums
+      [nums]: this.data.gouon.nums++
     })
     
   },
   tiao(){
     wx.navigateTo({
       url: '../../pages/kecheng/kechengs/kechengs',
+    })
+  },
+  details(e){
+    var id = e.currentTarget.dataset.id
+    
+    wx.request({
+      url: 'http://localhost:8083/detail',
+      data: { id:id},
+      method: 'POST',
+      success: (res) => {
+        console.log(res.data.obj)
+        var ress = res.data.obj
+        wx.setStorageSync("cart",ress)
+        wx.navigateTo({
+          url: '../details/details',
+        })
+      }
+    })
+   
+  },
+  quern(){
+    var arr = wx.getStorageSync('cart')||[];
+    var cartData = this.data.gouon;
+    console.log(this.data.gouon);
+    wx.setStorageSync('cart',cartData);
+    if(arr==true){
+      this.setData({
+        nums:this.data.gouon.nums
+      })
+    }else{
+      var obj={
+        titles: this.data.gouon.titles,
+        jia: this.data.gouon.jia,
+        lan: this.data.gouon.lan,
+        ku: this.data.gouon.ku,
+        zan: this.data.gouon.zan,
+        png: this.data.gouon.png,
+        nums: this.data.gouon.nums,
+        images: this.data.gouon.images,
+        id: this.data.gouon.id
+      }
+      console.log(obj)
+    }
+    this.setData({
+      stausts:false
     })
   },
   /**
@@ -118,6 +161,7 @@ Page({
     this.setData({
       num:0
     })
+   
   },
   guan(){
     this.setData({

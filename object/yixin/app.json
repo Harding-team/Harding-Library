@@ -5,7 +5,8 @@
     "pages/cart/cart",
     "pages/kecheng/kecheng",
     "pages/my/my",
-    "pages/kecheng/kechengs/kechengs"
+    "pages/kecheng/kechengs/kechengs",
+    "pages/details/details"
   ],
   "window": {
     "backgroundTextStyle": "light",
