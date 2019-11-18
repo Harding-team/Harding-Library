@@ -1,10 +1,19 @@
 Page({
   data: {
-    arr:['/images/qiimg/10.png','/images/qiimg/3.png','/images/qiimg/4.png','/images/qiimg/5.png','/images/qiimg/6.png','/images/qiimg/7.png','/images/qiimg/8.png','/images/qiimg/9.png']
+    arr:[]
   },
   onLoad: function (options) {
     wx.setNavigationBarTitle({
       title: options.name,
+    })
+    let _that = this;
+    wx.request({
+      url: 'http://localhost:8083/dimg',
+      success:(res)=>{
+        this.setData({
+          arr: res.data.listArr
+        })
+      }
     })
   }
 })
