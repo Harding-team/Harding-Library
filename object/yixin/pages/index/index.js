@@ -16,9 +16,9 @@ Page({
       'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3751828260,2572384024&fm=26&gp=0.jpg'
       ],
     shopImgArr:[
-      'http://img1.imgtn.bdimg.com/it/u=2809931131,83999982&fm=26&gp=0.jpg',
-      'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3785576054,961929065&fm=26&gp=0.jpg',
-      'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2130639090,16797406&fm=26&gp=0.jpg'
+      'https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1261311949,211702069&fm=26&gp=0.jpg',
+      'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3343385524,1816653258&fm=26&gp=0.jpg',
+      'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=4116498177,2464549981&fm=26&gp=0.jpg'
     ],
     reservationArr:[
       {

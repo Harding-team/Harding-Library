@@ -19,6 +19,7 @@
 .reservationBox{
   height:230rpx;
   width:100%;
+  box-sizing: border-box;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -79,7 +80,7 @@
   height:70rpx;
   line-height:70rpx;
   text-align: center;
-  border:1rpx solid #000;
+  border:1px solid #000;
   border-radius: 50rpx;
 }
 /* 艺欣艺术 */
