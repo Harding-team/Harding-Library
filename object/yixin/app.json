@@ -10,7 +10,14 @@
     "pages/offerDetail/offerDetail",
     "pages/offer/offer",
     "pages/contact/contact",
-    "pages/shopImg/shopImg"
+    "pages/shopImg/shopImg",
+    "pages/order/order",
+    "pages/yuyue/yuyue",
+    "pages/youhui/youhui",
+    "pages/youhuiDetail/youhuiDetail",
+    "pages/kanjia/kanjia",
+    "pages/pintuan/pintuan",
+    "pages/giveAuthor/giveAuthor"
   ],
   "window": {
     "backgroundTextStyle": "light",
