@@ -15,6 +15,10 @@ Page({
   },
   onLoad(options) {
     app.loading()
+    let offerObj = wx.getStorageSync('offerObj')
+    this.setData({
+      offerObj  
+    })
   },
   onChangeBtn(ev){
     let index = ev.currentTarget.dataset.index
