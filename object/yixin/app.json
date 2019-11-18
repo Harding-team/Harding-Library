@@ -17,7 +17,9 @@
     "pages/youhuiDetail/youhuiDetail",
     "pages/kanjia/kanjia",
     "pages/pintuan/pintuan",
-    "pages/giveAuthor/giveAuthor"
+    "pages/giveAuthor/giveAuthor",
+    "pages/cart/cart",
+    "pages/details/details"
   ],
   "window": {
     "backgroundTextStyle": "light",
