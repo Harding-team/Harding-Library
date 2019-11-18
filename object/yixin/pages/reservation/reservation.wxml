@@ -1,8 +1,0 @@
-<view class="wrap">
-    <view class="reservation">
-        <view class="item {{curIndex == index?'active':''}}" bindtap="tap" data-curIndex="{{index}}" wx:for="{{list}}" wx:key="{{index}}">
-            {{item}}
-        </view>
-    </view>
-    <image src="/images/qiimg/8.png"  />
-</view>

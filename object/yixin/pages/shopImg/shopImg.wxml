@@ -1,3 +1,0 @@
-<view class="box">
-    <image wx:for="{{arr}}" wx:key="{{index}}" src="{{item}}" />
-</view>

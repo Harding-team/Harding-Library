@@ -13,9 +13,9 @@
 		"coverView": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.9.3",
-	"appid": "wxed00f862638bff19",
-	"projectname": "%E8%89%BA%E6%AC%A3git%E6%B5%8B%E8%AF%95",
+	"libVersion": "2.9.0",
+	"appid": "wxc441562c6ccdfa3c",
+	"projectname": "yixin",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
@@ -31,13 +31,24 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
 			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
-			"list": []
+			"current": 0,
+			"list": [
+				{
+					"id": -1,
+					"name": "kecheng",
+					"pathName": "pages/kecheng/kecheng",
+					"scene": null
+				}
+			]
 		}
 	}
 }

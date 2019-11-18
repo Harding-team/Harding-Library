@@ -1,4 +1,4 @@
-// pages/giveAuthor/giveAuthor.js
+// pages/kecheng/kechengs/kechengs.js
 Page({
 
   /**
