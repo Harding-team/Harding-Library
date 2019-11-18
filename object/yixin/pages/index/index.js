@@ -1,16 +1,25 @@
 //index.js
 //获取应用实例
 const app = getApp()
-
 Page({
   data: {
     indicatorDots: true,
     offerFlag:'0',
     vertical: false,
-    autoplay: false,
     interval: 2000,
     duration: 500,
-    imgArr:['/images/qiimg/1.png','/images/qiimg/2.png','/images/qiimg/3.png','/images/qiimg/4.png','/images/qiimg/5.png'],
+    imgArr:[
+      'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1784651257,3355939035&fm=26&gp=0.jpg',
+      'http://img4.imgtn.bdimg.com/it/u=3209370120,2008812818&fm=26&gp=0.jpg',
+      'http://img1.imgtn.bdimg.com/it/u=2752453349,2871240348&fm=26&gp=0.jpg',
+      'http://img1.imgtn.bdimg.com/it/u=3390039905,145682966&fm=26&gp=0.jpg',
+      'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3751828260,2572384024&fm=26&gp=0.jpg'
+      ],
+    shopImgArr:[
+      'http://img1.imgtn.bdimg.com/it/u=2809931131,83999982&fm=26&gp=0.jpg',
+      'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3785576054,961929065&fm=26&gp=0.jpg',
+      'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2130639090,16797406&fm=26&gp=0.jpg'
+    ],
     reservationArr:[
       {
         name:'动态',
