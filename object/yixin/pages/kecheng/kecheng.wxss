@@ -1,1 +1,201 @@
-/* pages/kecheng/kecheng.wxss */
+.warp{
+  width:100vw;
+  height:100vh;
+
+}
+.warp .top{
+  display: flex;
+  justify-content: center;
+  width:100vw;
+  height:60rpx;
+  border-bottom:1px solid #ddd;
+}
+.warp .top input{
+  background:#ddd;
+  font-size:25rpx;
+  color:#ccc;
+  width:700rpx;
+  height:30rpx;
+  border:1px solid #ddd;
+  border-radius: 30rpx;
+}
+.warp .list{
+  width:20vw;
+  height:100vh;
+  background:#ddd;
+}
+.warp .list .list-one{
+  width:100%;
+  height:90rpx;
+  line-height: 90rpx;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  font-size: 25rpx;
+}
+.warp .list .active{
+  background: #fff;
+  color:orange;
+}
+.kai{
+  display: flex;
+}
+.right{
+  position: relative;
+  width:80vw;
+  height:100vh;
+}
+.right .views{
+  width:100%;
+  height:100%;
+  position:absolute;
+  display: none;
+  top:0;
+  left:0;
+}
+.right .active{
+  display: block; 
+}
+.right .aaa{
+  width:100%;
+  height:200rpx;
+  padding:20rpx;
+  display: flex;
+}
+.right .aaa .images{
+  width:200rpx;
+  height:200rpx;
+}
+.right .aaa .images{
+  width:200rpx;
+  height:200rpx;
+}
+.right .aaa .images image{
+  width:200rpx;
+  height:200rpx;
+} 
+.right .aaa .rights .rights-one{
+  width:350rpx;
+  height:100rpx;
+  word-break: break-all;
+  margin-left: 30rpx;
+  font-size: 30rpx
+}
+.right .aaa .rights .rights-two{
+  margin-left:30rpx;
+  color: #f00;
+}
+.right .aaa .rights .rights-theer{
+  width:300rpx;
+  height:30rpx;
+  margin-left:30rpx;
+  font-size:20rpx;
+  color: #f00;
+  margin-top:15rpx;
+  display: flex;
+}
+.right .aaa .rights .rights-theer .wu{
+  width:30rpx;
+  margin-left:20rpx;
+}
+.right .aaa .rights .rights-theer .wu image{
+  width:30rpx;
+  height:30rpx;
+}
+.right .aaa .rights .rights-theer .wu-to{
+  width:400rpx;
+}
+.warp .box{
+  position: relative;
+  width:100vw;
+  height:100vh;
+  position: fixed;
+  top:0;
+  left:0;
+  background: rgba(0,0,0,.5);
+  display: none;
+}
+.box .gouw{
+  position: absolute;
+  bottom:0rpx;
+  left:0;
+  width:100vw;
+  height:300rpx;
+  background:#fff;
+}
+.box .gouw .tops{
+  width:100vw;
+  height:180rpx;
+  padding:20rpx;
+  box-sizing: border-box;
+  display: flex;
+  border-bottom: 1px solid #ddd;
+}
+.box .gouw .tops .top-one{
+  width:150rpx;
+  height:150rpx;
+}
+.box .gouw .tops .top-one image{
+  width:100%;
+  height: 100%;
+}
+.box .gouw .tops .top-two{
+  width:300rpx;
+  height:100%;
+  box-sizing: border-box;
+  padding:20rpx;
+}
+.box .gouw .tops .top-two view:nth-child(1){
+  color:orange;
+}
+.box .gouw .tops .top-two view:nth-child(2){
+  margin-top:10rpx;
+  font-size:  28rpx;
+}
+.box .gouw .centers{
+  width:100vw;
+  height:50rpx;
+  display: flex;
+  justify-content: space-between;
+
+}
+.box .gouw .centers .centers-one{
+  width:150rpx;
+  display: flex;
+}
+.box .gouw .centers .centers-one .aaaa{
+  width:40rpx;
+  height:40rpx;
+  border:1px solid #ddd;
+  text-align: center;
+  line-height: 40rpx;
+}
+.box .gouw .centers .centers-one .aaas{
+  width:40rpx;
+  height:40rpx;
+  border:1px solid #ddd;
+  text-align: center;
+  line-height: 40rpx;
+}
+.box .gouw .centers .centers-one .bbb{
+  width:80rpx;
+  height:40rpx;
+  text-align: center;
+  border-top:1px solid #ddd;
+  border-bottom:1px solid #ddd;
+}
+.box .gouw .tops .shan{
+  position:absolute;
+  right:30rpx;
+  top:20rpx;
+}
+.box .gouw .que{
+  width:100vw;
+  height:70rpx;
+  background: orange;
+  text-align: center;
+  line-height: 70rpx;
+  color:#fff;
+}
+.warp .active{
+  display:block; 
+}

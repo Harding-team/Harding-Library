@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .apulis{
   box-sizing: border-box;
   padding: 10px;
@@ -106,3 +107,6 @@
 }
 
 
+=======
+/* pages/details/details.wxss */
+>>>>>>> 5617efa85f0ab729297716489785a936c937e770

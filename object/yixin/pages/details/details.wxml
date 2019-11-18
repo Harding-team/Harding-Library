@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <view class="conter">
     <view class="page-section page-section-spacing swiper">
         <swiper style="height: 215px;"  indicator-dots="{{indicatorDots}}"
@@ -64,3 +65,7 @@
       <view style='background:yellow;' class='a'><text>立即购买</text></view>
     </view>
 </view>
+=======
+<!--pages/details/details.wxml-->
+<text>pages/details/details.wxml</text>
+>>>>>>> 5617efa85f0ab729297716489785a936c937e770

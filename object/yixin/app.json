@@ -5,6 +5,7 @@
     "pages/cart/cart",
     "pages/kecheng/kecheng",
     "pages/my/my",
+<<<<<<< HEAD
     "pages/dynamic/dynamic",
     "pages/reservation/reservation",
     "pages/offerDetail/offerDetail",
@@ -19,37 +20,45 @@
     "pages/pintuan/pintuan",
     "pages/giveAuthor/giveAuthor",
     "pages/cart/cart",
+=======
+    "pages/kecheng/kechengs/kechengs",
+>>>>>>> 5617efa85f0ab729297716489785a936c937e770
     "pages/details/details"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "",
+    "navigationBarTitleText": "1111",
     "navigationBarTextStyle": "black"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json",
   "tabBar": {
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "首页",
-      "iconPath": "/images/home.jpg",
-      "selectedIconPath": "/images/home-active.jpg"
-    },{
-      "pagePath": "pages/cart/cart",
-      "text": "购物车", 
-      "iconPath": "/images/cart.jpg",
-      "selectedIconPath": "/images/cart-active.jpg"
-    },{
-      "pagePath": "pages/kecheng/kecheng",
-      "text": "开设课程",
-      "iconPath": "/images/new.jpg",
-      "selectedIconPath": "/images/new-active.jpg"
-    },{
-      "pagePath": "pages/my/my",
-      "text": "我的",
-      "iconPath": "/images/mine.jpg",
-      "selectedIconPath": "/images/mine-active.jpg"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/home.jpg",
+        "selectedIconPath": "/images/home-active.jpg"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "/images/cart.jpg",
+        "selectedIconPath": "/images/cart-active.jpg"
+      },
+      {
+        "pagePath": "pages/kecheng/kecheng",
+        "text": "开设课程",
+        "iconPath": "/images/new.jpg",
+        "selectedIconPath": "/images/new-active.jpg"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/images/mine.jpg",
+        "selectedIconPath": "/images/mine-active.jpg"
+      }
+    ]
   }
 }
