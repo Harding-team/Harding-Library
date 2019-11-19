@@ -1,7 +1,4 @@
 {
-  "usingComponents": {
-    "yixinyishu":"/public/components/yixinyishu"
-  },
-  "navigationBarTitleText": "石浦艺欣艺术学校",
-  "enablePullDownRefresh": true
+  "usingComponents": {},
+  "navigationBarTitleText": "艺欣艺术学校"
 }

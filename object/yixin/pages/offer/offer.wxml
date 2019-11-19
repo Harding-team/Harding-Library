@@ -1,10 +1,2 @@
-<image src="/images/qiimg/9.png" class="topImg" />
-<view class="offer">
-    <image src="/images/qiimg/10.png" bindtap="goToOfferDetail" />
-    <view >
-        <view class="price">¥100</view>
-        <view class="name">代金券</view>
-        <view class="btn" bindtap="tap" wx:if="{{flag == '0'}}">点击领取</view>
-        <view class="btn" wx:else>已领取</view>
-    </view>
-</view>
+<!--pages/offer/offer.wxml-->
+<text>pages/offer/offer.wxml</text>
