@@ -1,1 +1,3 @@
-/* pages/dynamic/dynamic.wxss */
+image{
+    width:100%;
+}

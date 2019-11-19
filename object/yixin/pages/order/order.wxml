@@ -1,2 +1,45 @@
-<!--pages/order/order.wxml-->
-<text>pages/order/order.wxml</text>
+<view class="wrap">
+    <view class="btnList">
+        <block wx:for="{{orderList}}" wx:key="{{index}}">
+            <view class="btn {{index==currentIndex?'active':''}}"
+                  bind:tap="onChangeBtn"
+                  data-index="{{index}}">{{item.name}}</view>
+        </block>
+    </view>
+    <view class="conList">
+        <!-- <block wx:for="{{orderList}}" wx:key="{{index}}">
+            <view wx:if="{{index==currentIndex}}">{{index}}暂无订单</view>
+        </block> -->
+        <view class="conItem" wx:if="{{currentIndex==0}}">0</view>
+        <view class="conItem" wx:if="{{currentIndex==1}}">
+            <view class="top">
+                <view class="title-left">2019-11-16 17：12:37</view>
+                <view class="title-right">待卖家发货</view>
+            </view>
+            <block wx:for="{{middleList}}">
+                <view class="middle">
+                    <view class="middle-left">
+                        <image src="{{item.img}}" />
+                    </view>
+                    <view class="middle-text">{{item.text}}</view>
+                    <view class="middle-right">
+                        <view class="price">￥{{item.price}}</view>
+                        <view class="counts">x{{item.counts}}</view>
+                    </view>
+                </view>
+             </block>
+            <view class="bottom">
+                <view class="bot-box">
+                    共两件商品 合计：￥800,00(含运费￥0.00)
+                </view>
+                <view>货到付款</view>
+            </view>
+        </view>
+        <view class="conItem" wx:if="{{currentIndex==2}}">2</view>
+        <view class="conItem" wx:if="{{currentIndex==3}}">3</view>
+    </view>
+   
+    
+
+    
+</view>

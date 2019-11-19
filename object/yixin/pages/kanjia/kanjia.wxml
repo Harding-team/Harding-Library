@@ -1,2 +1,17 @@
-<!--pages/kanjia/kanjia.wxml-->
-<text>pages/kanjia/kanjia.wxml</text>
+<view class="wrap">
+    <view class="btnList">
+        <block wx:for="{{titleBtn}}" wx:key="{{index}}">
+            <view class="btn {{index==currentIndex?'active':''}}"
+                  bind:tap="onChangeBtn"
+                  data-index="{{index}}">{{item}}</view>
+        </block>
+    </view>
+    <view class="conList">
+        <!-- <block wx:for="{{titleBtn}}" wx:key="{{index}}">
+            <view wx:if="{{index==currentIndex}}">{{index}}暂无订单</view>
+        </block> -->
+        <view class="conItem" wx:if="{{currentIndex==0}}">0暂无订单</view>
+        <view class="conItem" wx:if="{{currentIndex==1}}">1暂无订单</view>
+        <view class="conItem" wx:if="{{currentIndex==2}}">2暂无订单</view>
+    </view>
+</view>

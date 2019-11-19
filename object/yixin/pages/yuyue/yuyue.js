@@ -1,66 +1,30 @@
-// pages/yuyue/yuyue.js
+let app = getApp();
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    titleBtn: ['待确认','已完成','已关闭'],
+    currentIndex: 0
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  onLoad(options) {
+    app.loading()
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  onChangeBtn(ev){
+    let index = ev.currentTarget.dataset.index
+    this.setData({
+      currentIndex: index
+    })
+    app.loading()
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  onPullDownRefresh(){
+    wx.showNavigationBarLoading()
+    wx.startPullDownRefresh({
+      success: (res)=>{
+        console.log(res)
+      }
+    });
+    setTimeout(() => {
+      console.log(111)
+      wx.stopPullDownRefresh()
+      wx.hideNavigationBarLoading()
+    }, 2000);
   }
 })
