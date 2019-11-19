@@ -1,6 +1,0 @@
-<view class='warp'>
-  <view class='top'>
-    <input bindtap="tiao" type='text' placeholder='搜索所有商品'></input>
-  </view>
-  
-</view>
