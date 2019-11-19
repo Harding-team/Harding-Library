@@ -41,6 +41,16 @@ Page({
     ]
   },
   onLoad: function () {
+    // this.onPullDownRefresh()
+  },
+  onPullDownRefresh(){
+    wx.showNavigationBarLoading();
+    wx.showLoading({title:'加载中...'})
+    setTimeout(() => {
+      wx.hideNavigationBarLoading();;
+      wx.stopPullDownRefresh();
+      wx.hideLoading()
+    },500)
   },
   onShow(){
     if(!wx.getStorageSync('offer')){
