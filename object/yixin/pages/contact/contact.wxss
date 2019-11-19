@@ -1,1 +1,75 @@
-/* pages/contact/contact.wxss */
+.contact{
+    width:100%;
+    margin-top:1rpx solid #666;
+}
+.icon-fanhui{
+    display: inline-block;  
+    transform: rotate(180deg);
+    color:#ccc;
+    font-size:24rpx;
+    position: absolute;
+    right:0;
+    top:6rpx;
+}
+/* 底部 */
+.top{
+    font-size:26rpx;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width:90%;
+    margin:30rpx 0 30rpx 5%;
+}
+.top image{
+    width:70rpx;
+    height:70rpx;
+}
+.top>view span{
+    color:#ccc;
+}
+.top>view span i{
+    font-size:20rpx;
+}
+.span1{
+    display: inline-block;
+    margin-top:20rpx;
+}
+.span1 i{
+    display: inline-block;
+    margin-right: 10rpx;
+}
+.top>view:nth-child(2){
+    margin-left:30rpx;
+}
+.top>view:nth-child(3){
+    margin-left:235rpx;
+    text-align: center;
+}
+/* 底部 */
+.btm{
+    width:90%;
+    margin-left:5%;
+    padding:20rpx 0;
+    border-top:1rpx dashed #ccc;
+}
+.btm>view{
+    display: flex;
+    justify-content: flex-start;
+    margin:20rpx 0;
+    position: relative;
+    align-items: center;
+}
+.btm>view view{
+    margin-left:10rpx;
+    font-size:26rpx;
+}
+.btm>view .yixin-orange{
+    color:#ff7805;
+    border:1rpx solid #ff7805;
+    padding:5rpx 10rpx;
+    font-size:24rpx;
+    margin-left:15rpx;
+}
+.more{
+    margin-left:455rpx !important;
+}

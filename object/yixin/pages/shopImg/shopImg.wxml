@@ -1,2 +1,3 @@
-<!--pages/shopImg/shopImg.wxml-->
-<text>pages/shopImg/shopImg.wxml</text>
+<view class="box">
+    <image wx:for="{{arr}}" wx:key="{{index}}" src="{{item}}" />
+</view>

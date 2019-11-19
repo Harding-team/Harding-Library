@@ -1,1 +1,12 @@
-/* pages/shopImg/shopImg.wxss */
+.box{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    padding-bottom:35rpx;
+}
+.box image{
+    width:47%;
+    height:346rpx;
+    margin-top:35rpx;
+}

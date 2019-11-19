@@ -1,2 +1,33 @@
-<!--pages/youhui/youhui.wxml-->
-<text>pages/youhui/youhui.wxml</text>
+<view class="wrap">
+    <view class="btnList">
+        <block wx:for="{{titleBtn}}" wx:key="{{index}}">
+            <view class="btn {{index==currentIndex?'active':''}}"
+                  bind:tap="onChangeBtn"
+                  data-index="{{index}}">{{item.name}}({{item.count}})</view>
+        </block>
+    </view>
+    <view class="conList">
+        <!-- <block wx:for="{{titleBtn}}" wx:key="{{index}}">
+            <view wx:if="{{index==currentIndex}}">{{index}}暂无订单</view>
+        </block> -->
+        <view class="conItem" wx:if="{{currentIndex==0}}">
+            <view class="bg" bind:tap="goToYouHuiDetail">
+                <view class="bg-left">
+                    <view class="bl-name fs36">{{offerObj.name}}</view>
+                    <view class="bl-time fs24">{{offerObj.time}}</view>
+                </view>
+                <view class="bg-right">
+                    <view class="br-price fs36">￥{{offerObj.price}}</view>
+                    <view class="br-text fs26">代金券</view>
+                    <view class="br-btn">立即使用</view>
+                </view>
+            </view>
+        </view>
+        <view class="conItem" wx:if="{{currentIndex==1}}">1暂无订单</view>
+        <view class="conItem" wx:if="{{currentIndex==2}}">2暂无订单</view>
+    </view>
+   
+    
+
+    
+</view>
