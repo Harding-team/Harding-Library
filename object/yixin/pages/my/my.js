@@ -1,66 +1,65 @@
 // pages/my/my.js
+let app = getApp();
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    orderList: [{
+      icon: 'daishouhuo',
+      name: '待收货'
+    },{
+      icon: 'huowu',
+      name: '待取货'
+    },{
+      icon: 'yiwancheng',
+      name: '已完成'
+    },{
+      icon: 'yiguanbigongdanshu',
+      name: '已关闭'
+    }]
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
   onLoad: function (options) {
 
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  goToOrder(ev){
+    let index = ev.currentTarget.dataset.index;
+    wx.navigateTo({
+      url: '/pages/order/order?index='+index
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  goToYuyue(){
+    wx.navigateTo({
+      url: '/pages/yuyue/yuyue'
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  goToYouHui(){
+    wx.navigateTo({
+      url: '/pages/youhui/youhui'
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
+  goToKanJia(){
+    wx.navigateTo({
+      url: '/pages/kanjia/kanjia'
+    })
   },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
+  goToPinTuan(){
+    wx.navigateTo({
+      url: '/pages/pintuan/pintuan'
+    })
   },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
+  onGiveAuthor(){
+    wx.previewImage({
+      urls: ['http://a1.qpic.cn/psb?/V12NJO3h1JBiOp/qagclP9BAXzRuNveX1LFF0lBvFncZTnIhc.BeZU2r2I!/m/dFwAAAAAAAAAnull&bo=UAVQBVAFUAUDCSw!&rf=photolist&t=5'],
+      success: function(res){
+        // console.log(res);
+      }
+    })
   },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  onAddress(){
+    wx.chooseAddress({
+      success: (res)=>{
+        console.log(res)
+      },
+      fail: ()=>{},
+      complete: ()=>{}
+    });
   }
 })

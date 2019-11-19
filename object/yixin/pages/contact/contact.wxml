@@ -1,2 +1,44 @@
-<!--pages/contact/contact.wxml-->
-<text>pages/contact/contact.wxml</text>
+<view class="contact">
+    <!-- 顶部 -->
+    <view class="top">
+        <image src="/images/qiimg/2.png" />
+        <view >
+            <view >石浦艺欣艺术学校</view>
+            <span class="span1"><i  style="color:#ccc" class="iconfont icon-jiantouarrow591"></i>距离我 1335.4km</span>
+        </view>
+        <view>
+            <view ><i style="color:green; font-size:50rpx;" class="iconfont icon-icon"></i></view>
+            <span class="span2">联系商家</span>
+        </view>
+    </view>
+    <!-- 底部 -->
+    <view class="btm">
+        <view>
+            <i class="iconfont icon-location"></i>
+            <view>浙江省宁波市象山县石浦镇凤栖路248号</view>
+            <i class="iconfont icon-fanhui"></i>
+      </view>
+      <view>
+            <i class="iconfont icon-002dianhua"></i>
+            <view>15058850223</view>
+            <i class="iconfont icon-fanhui"></i>
+      </view>
+      <view>
+            <i class="iconfont icon-biao"></i>
+            <view>24小时</view>
+      </view>
+      <view>
+            <i class="iconfont icon-yingyong"></i>
+            <view class="yixin-orange">Wi-Fi</view>
+            <view class="yixin-orange">停车位</view>
+            <view class="yixin-orange">支付宝支付</view>
+            <view class="yixin-orange">微信支付</view>
+      </view>
+      <view>
+            <i class="iconfont icon-tupian"></i>
+            <view>店铺图片</view>
+            <view class="more"  bindtap="gotoShopImg" >更多<i class="iconfont icon-fanhui"></i></view>
+      </view>
+      <yixinyishu></yixinyishu>
+    </view>
+</view>

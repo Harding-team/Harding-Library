@@ -1,7 +1,6 @@
 //index.js
 //获取应用实例
 const app = getApp()
-
 Page({
   data: {
     indicatorDots: true,
@@ -40,9 +39,61 @@ Page({
         pathUrl:'/pages/contact/contact'
       }
     ]
-
   },
   onLoad: function () {
-    console.log('onLoad')
+    // this.onPullDownRefresh()
+  },
+  onPullDownRefresh(){
+    wx.showNavigationBarLoading();
+    wx.showLoading({title:'加载中...'})
+    setTimeout(() => {
+      wx.hideNavigationBarLoading();;
+      wx.stopPullDownRefresh();
+      wx.hideLoading()
+    },500)
+  },
+  onShow(){
+    if(!wx.getStorageSync('offer')){
+      wx.setStorageSync('offer','0')
+    }
+    let flag = wx.getStorageSync('offer')
+    this.setData({
+      offerFlag:flag
+    })
+  },
+  gotoBox(e){//跳转页面
+    wx.navigateTo({
+      url:`${e.currentTarget.dataset.pathurl}?name=${e.currentTarget.dataset.name}`,
+    })
+  },
+  receive(){//领取优惠券
+    if(wx.getStorageSync('offer') == '1'){
+      wx.showToast({
+        title: '已经领取!!',
+        icon: 'info',
+        duration: 1000
+      })
+    }else{
+      wx.showToast({
+        title: '领取成功!!',
+        icon: 'success',
+        duration: 1000
+      })
+      JSON.stringify(wx.setStorageSync('offerObj',{
+        name:'艺欣艺术100代金券',
+        price:100,
+        time:'2019-11-11至2020-11-11'
+      }))
+    }
+    wx.setStorageSync('offer','1')
+    let flag = wx.getStorageSync('offer')
+    this.setData({
+      offerFlag:flag
+    })
+  },
+  goToOfferDetail(){
+    wx.navigateTo({
+      url: '/pages/offerDetail/offerDetail',
+    })
   }
 })

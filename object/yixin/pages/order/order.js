@@ -1,66 +1,43 @@
-// pages/order/order.js
+let app = getApp();
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    orderList: [{
+      icon: 'daishouhuo',
+      name: '待收货'
+    },{
+      icon: 'huowu',
+      name: '待取货'
+    },{
+      icon: 'yiwancheng',
+      name: '已完成'
+    },{
+      icon: 'yiguanbigongdanshu',
+      name: '已关闭'
+    }],
+    middleList: [{
+      img: 'http://img1.imgtn.bdimg.com/it/u=3608155120,1630233151&fm=26&gp=0.jpg',
+      text: '  待付款时间了快放待付款时间了快放假施蒂利克待付款时间了快放假施蒂利克假施蒂利克',
+      price: 300,
+      counts: 4
+    },{
+      img: 'http://img1.imgtn.bdimg.com/it/u=3608155120,1630233151&fm=26&gp=0.jpg',
+      text: '  待付款时间了快放待付款时间了快放假施蒂利克待付款时间了快放假施蒂利克假施蒂利克',
+      price: 330,
+      counts: 2
+    }]
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  onLoad(options) {
+    console.log(options.index)
+    this.setData({
+      currentIndex: options.index
+    })
+    app.loading()
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  onChangeBtn(ev){
+    let index = ev.currentTarget.dataset.index
+    this.setData({
+      currentIndex: index
+    })
+    app.loading()
   }
 })
