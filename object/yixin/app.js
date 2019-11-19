@@ -35,13 +35,5 @@ App({
   },
   globalData: {
     userInfo: null
-  },
-  loading(){
-    wx.showLoading({
-      title: '正在加载'
-    });
-    setTimeout(() => {
-      wx.hideLoading()
-    }, 500);
   }
 })

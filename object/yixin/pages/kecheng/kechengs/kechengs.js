@@ -1,4 +1,4 @@
-// pages/pintuan/pintuan.js
+// pages/kecheng/kechengs/kechengs.js
 Page({
 
   /**
