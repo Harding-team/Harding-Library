@@ -2,7 +2,7 @@ Page({
   data: {
     isAllSelect: false,
     totalMoney: 0,
-    carts:[]
+    carts:[]  
   },
   onLoad: function (options) {
     this.getTotalPrice();
